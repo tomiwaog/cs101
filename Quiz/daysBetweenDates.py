@@ -23,11 +23,11 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
        the second."""
         
     # YOUR CODE HERE!
-    diffindates = 0;
-    while((year1,month1,day1) != (year2,month2,day2)):
+    dayscounter = 0;
+    while((year1,month1,day1) < (year2,month2,day2)):
         year1,month1,day1 = nextDay(year1,month1,day1)
-        diffindates+=1
-    return diffindates
+        dayscounter+=1
+    return dayscounter
 
 def test():
     test_cases = [((2012,9,30,2012,10,30),30), 
