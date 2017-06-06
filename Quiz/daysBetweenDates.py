@@ -24,8 +24,8 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
         
     # YOUR CODE HERE!
     dayscounter = 0;
-    while(nextDay(year1,month1,day1) <= year2,month2,day2):
-        nextDay(year1,month1,day1)
+    while((year1,month1,day1) != (year2,month2,day2)):
+        year1,month1,day1 = nextDay(year1,month1,day1)
         dayscounter+=1
     return dayscounter
 
